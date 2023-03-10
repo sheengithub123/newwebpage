@@ -63,11 +63,11 @@ if (isMobileDevice) {
 	console.log("You are using a Mobile Device");
 	// add "topic" parameter
 	search_params.set('device', 'phone');
-	alert("You are using a Mobile Device")
+	alert("You are using a Mobile Device");
 } else {
 	console.log("You are using Desktop");
 	search_params.set('device', 'desktop');
-	alert("You are using a Desktop")
+	alert("You are using a Desktop");
 }
 </script>			   
 <script type='text/javascript'>                    
@@ -79,8 +79,12 @@ if (isMobileDevice) {
 		else { vizElement.style.width='100%';vizElement.style.height='1427px';}    */               
 
 
-		if ( (isMobileDevice)) { vizElement.style.width='90%';vizElement.style.height='1427px';} 
-		else { vizElement.style.width='1000px';vizElement.style.height='927px';} 
+		if ( (isMobileDevice))
+			alert("You are using a Mobile Device1");
+			{ vizElement.style.width='90%';vizElement.style.height='1427px';device='phone'} 
+		else 
+			alert("You are using a Desktop1");
+			{ vizElement.style.width='1000px';vizElement.style.height='927px';device='desktop'} 
 			
 	var scriptElement = document.createElement('script');                    
 	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
