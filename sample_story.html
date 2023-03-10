@@ -59,18 +59,19 @@ it returns boolean value*/
 let isMobileDevice = regexp.test(details);
 
 if (isMobileDevice) {
-	alert("You are using a Mobile Device");
+	console.log("You are using a Mobile Device");
 } else {
-	alert("You are using Desktop");
+	console.log("You are using Desktop");
 }
 </script>			   
 <script type='text/javascript'>                    
 	var divElement = document.getElementById('viz1678243754639');                    
 	var vizElement = divElement.getElementsByTagName('object')[0];                    
-		if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='927px'; } //{ vizElement.style.width='100%';vizElement.style.height='100%';}//
-		else if ( divElement.offsetWidth <430  ) { vizElement.style.width='1000px';vizElement.style.height='827px'; device ='phone'} 
+		if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} //{ vizElement.style.width='100%';vizElement.style.height='100%';}//
+		else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} 
+		else if ( divElement.offsetWidth <430  ) { vizElement.style.width='400px';vizElement.style.height='1427px'; device ='phone'} 
 		else { vizElement.style.width='100%';vizElement.style.height='1427px';}                   
-		//{ vizElement.style.width=window.innerWidth;vizElement.style.height=window.innerHeight;}
+		{ vizElement.style.width=window.innerWidth;vizElement.style.height=window.innerHeight;}
 	var scriptElement = document.createElement('script');                    
 	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
 	vizElement.parentNode.insertBefore(scriptElement, vizElement);                
