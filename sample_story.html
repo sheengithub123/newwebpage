@@ -57,16 +57,16 @@ let regexp = /android|iphone|kindle|ipad/i;
 /* Using test() method to search regexp in details
 it returns boolean value*/
 let isMobileDevice = regexp.test(details);
-var search_params = url.searchParams;
+//var search_params = url.searchParams;
 
 if (isMobileDevice) {
 	console.log("You are using a Mobile Device");
 	// add "topic" parameter
-	search_params.set('device', 'phone');
+	//search_params.set('device', 'phone');
 	alert("You are using a Mobile Device");
 } else {
 	console.log("You are using Desktop");
-	search_params.set('device', 'desktop');
+	//search_params.set('device', 'desktop');
 	alert("You are using a Desktop");
 }
 </script>			   
@@ -78,7 +78,7 @@ if (isMobileDevice) {
 		else if ( divElement.offsetWidth <430  ) { vizElement.style.width='400px';vizElement.style.height='1427px'; device ='phone'} 
 		else { vizElement.style.width='100%';vizElement.style.height='1427px';}    */               
 
-
+		alert(isMobileDevice);
 		if ( (isMobileDevice))
 			alert("You are using a Mobile Device1");
 			{ vizElement.style.width='90%';vizElement.style.height='1427px';device='phone'} 
