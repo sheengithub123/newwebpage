@@ -30,7 +30,10 @@ support@yourcompany.com</a>.
 <div class='tableauPlaceholder' id='viz1678243754639' 
 style='position: relative'><noscript><a href='#'><img alt='Pre-Covid New Region- mobile ' 
 src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HT&#47;HTS6RegionFinal-FY2021-221Test2&#47;Pre-CovidNewRegion-mobile&#47;1_rss.png' style='border: none' />
-</a></noscript><object class='tableauViz'  style='display:none;'>
+</a></noscript>
+
+
+<object class='tableauViz'  style='display:none;'>
 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
 <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
 <param name='name' value='HTS6RegionFinal-FY2021-221Test2&#47;Pre-CovidNewRegion-mobile' />
@@ -38,7 +41,7 @@ src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HT&#47;HTS6Reg
 <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HT&#47;HTS6RegionFinal-FY2021-221Test2&#47;Pre-CovidNewRegion-mobile&#47;1.png' /> 
 <param name='animate_transition' value='yes' />
 <param name='display_static_image' value='yes' />
-<param name='device' value='desktop' />
+<param name='device' value='' />
 <param name='display_spinner' value='yes' />
 <param name='display_overlay' value='yes' />
 <param name='display_count' value='yes' />
@@ -64,26 +67,25 @@ if (isMobileDevice) {
 	// add "topic" parameter
 	//search_params.set('device', 'phone');
 	alert("You are using a Mobile Device");
+	document.getElementsByName("device")[0].value = 'phone';
 } else {
 	console.log("You are using Desktop");
 	//search_params.set('device', 'desktop');
 	alert("You are using a Desktop");
+	document.getElementsByName("device")[0].value = 'desktop';
 }
-                  
+alert(document.getElementsByName("device")[0].value );
+</script>			   
+<script type='text/javascript'>                    
 	var divElement = document.getElementById('viz1678243754639');                    
 	var vizElement = divElement.getElementsByTagName('object')[0];                    
-		/*if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} //{ vizElement.style.width='100%';vizElement.style.height='100%';}//
+		if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} //{ vizElement.style.width='100%';vizElement.style.height='100%';}//
 		else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} 
-		else if ( divElement.offsetWidth <430  ) { vizElement.style.width='400px';vizElement.style.height='1427px'; device ='phone'} 
-		else { vizElement.style.width='100%';vizElement.style.height='1427px';}    */               
+		else if ( divElement.offsetWidth <500  ) { vizElement.style.width='100%';vizElement.style.height='1427px'; device ='phone'} 
+		else { vizElement.style.width='100%';vizElement.style.height='1427px';}               
 
-		alert(isMobileDevice);
-		if ( (isMobileDevice))
-			alert("You are using a Mobile Device1");
-			{ vizElement.style.width='90%';vizElement.style.height='1427px';device='phone'} 
-		else 
-			alert("You are using a Desktop1");
-			{ vizElement.style.width='1000px';vizElement.style.height='927px';device='desktop'} 
+
+			alert("I am here");
 			
 	var scriptElement = document.createElement('script');                    
 	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
