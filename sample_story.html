@@ -27,56 +27,9 @@ support@yourcompany.com</a>.
 
 <P> <B>This is a new paragraph!</B>
 
-<div class='tableauPlaceholder' id='viz1688080853979' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3W&#47;3WNZ8BMBG&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;3WNZ8BMBG' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3W&#47;3WNZ8BMBG&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' />
-<param name='device' value='' />
-</object></div>                
+<div class='tableauPlaceholder' id='viz1688080853979' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3W&#47;3WNZ8BMBG&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;3WNZ8BMBG' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3W&#47;3WNZ8BMBG&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1688080853979');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='950px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<!-------------------------------------------->
 
-<script 		type='text/javascript'>  	   
-/* Storing user's device details in a variable*/
-let details = navigator.userAgent;
-
-/* Creating a regular expression
-containing some mobile devices keywords
-to search it in details string*/
-let regexp = /android|iphone|kindle|ipad/i;
-
-/* Using test() method to search regexp in details
-it returns boolean value*/
-let isMobileDevice = regexp.test(details);
-//var search_params = url.searchParams;
-
-if (isMobileDevice) {
-	console.log("You are using a Mobile Device");
-	// add "topic" parameter
-	//search_params.set('device', 'phone');
-	//alert("You are using a Mobile Device");
-	document.getElementsByName("device")[0].value = 'phone';
-} else {
-	console.log("You are using Desktop");
-	//search_params.set('device', 'desktop');
-	//alert("You are using a Desktop");
-	document.getElementsByName("device")[0].value = 'desktop';
-}
-alert(document.getElementsByName("device")[0].value );
-</script>	
-            
-<script type='text/javascript'>                    
-var divElement = document.getElementById('viz1678419811299');                    
-var vizElement = divElement.getElementsByTagName('object')[0];  
-		/*if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} //{ vizElement.style.width='100%';vizElement.style.height='100%';}//
-		else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='927px';} 
-		else if ( divElement.offsetWidth <500  ) { vizElement.style.width='70%';vizElement.style.height='1427px'; device ='phone'} 
-		else { vizElement.style.width='70%';vizElement.style.height='1427px';}  */             
-			
-
-                  
-if ( document.getElementsByName("device")[0].value == 'desktop' ) { vizElement.style.width='1000px';vizElement.style.height='927px';} 
-else if ( document.getElementsByName("device")[0].value == 'phone' ) { vizElement.style.width='100%';vizElement.style.height='927px';}     //{ vizElement.style.width='1000px';vizElement.style.height='927px';} 
-else { vizElement.style.width='50%';vizElement.style.height='927px';}                     
-var scriptElement = document.createElement('script');                    
-scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-</script>
 <BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
 
 <HR>
